@@ -10,15 +10,18 @@
 }
 
 .authors{
-    background-color: #dbe3e7;
+    background-color: #795F80;
 }
 
 .body{
-    background-color: rgb(90, 92, 92);
+    background-color: #CBC3E3;
 }
 
 .footer{
-    background-color: #023E8A;
+    background-color: #392A48;
+    width: 100%;
+    position: static;
+    clear: both;
 }
 
 .icon-white{            /* Arrow icon at bottom of page */
@@ -26,7 +29,7 @@
 }
 
 .nb-background-color{   /* navbar background color */
-    background-color: #023E8A;
+    background-color: #392A48;
 }
 
 .nbMenuItem{               /* navbar link text properties */
@@ -36,7 +39,7 @@
 }
 
 .overview{
-    background-color: #dbe3e7;
+    background-color: #B6B5D8;
 }
 
 .ovPadLeft{
@@ -48,13 +51,60 @@
 }
 
 .procedure{
-    background-color: #dbe3e7;
+    background-color: #795F80;
     padding: 1px;
 }
 
 .showcase{
-    background-color: #8fa3ab; /*#0096c7*/
+    background-color: #795F80; /*#0096c7*/
 }
+
+
+
+/*---------------------Image CSS------------------------*/
+#image-logo{
+    width: 5%;
+    height: auto;
+    max-width: 10%;
+}
+
+.img-main{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.img-diagram{
+    width: 100%;
+    height: auto;
+}
+
+.img-typing{
+    width: 100%;
+    height: auto;
+}
+
+.img-data{
+    width: 100%;
+    height: auto;
+}
+
+.me{
+    width: 60%;
+    height: auto;
+}
+
+.queenan{
+    width: 60%;
+    height: auto;
+}
+
+
+.table-img {
+    max-height: 110px;
+    object-fit: contain;
+  }
 
 /* ----------------- ID CSS ----------------- */
 
@@ -82,3 +132,66 @@
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
 }
+
+
+/*--Table--*/
+.table{
+    background-color: #8d7dbd;
+}
+
+/*---text---*/
+
+.procedure-head{
+    font-family: "Snell Roundhand",cursive; 
+    color: rgb(255, 255, 255);
+}
+
+
+.display-4{
+    font-size: 70px;
+    font-family: "Times New Roman";
+}
+
+.thanks{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Time New Roman";
+
+}
+
+.about-team{
+    font-size: 100px;
+    font-family: "Snell Roundhand",cursive;
+    color: rgb(255, 255, 255);
+}
+
+.ul-list{
+    font-size: 25px;
+    font-family: "Times New Roman";
+    color: rgb(45, 0, 80);
+}
+
+.index-head{
+    font-size: 40px;
+    font-family: "Times New Roman";
+    color: rgb(45, 0, 80);
+    font-weight: 700;
+}
+
+
+.name{
+    font-size: 40px;
+    font-family: "Snell Roundhand",cursive;
+    color: rgb(255, 255, 255); 
+}
+
+.footer{
+    font-family: "Times New Roman";
+}
+
+/* Table header style */
+.table thead th {
+    background-color: #29104c;
+    color: #fff;
+    border-color: #d1c4e9;
+  }
