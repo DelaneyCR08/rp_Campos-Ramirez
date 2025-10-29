@@ -1,0 +1,4 @@
+Algorithm, Accuracy, Execution Time, Memory Usage, False Positive Rate, False Negative Rate
+Preorder, 93, 200.68, 0.00, 0, 0
+Inorder, 80, 200.60, 0.00, 8, 13
+Postorder, 93, 200.67, 0.00, 0, 7
