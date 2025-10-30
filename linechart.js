@@ -73,6 +73,7 @@ async function createChart() {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             scales: {
                 x: {
                     title: {
@@ -104,5 +105,9 @@ async function createChart() {
         }
     });
 }
+
+window.addEventListener('resize', () => {
+    if (myChart) myChart.resize();
+});
 
 createChart();

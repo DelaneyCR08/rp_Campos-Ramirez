@@ -93,7 +93,7 @@
     height: auto;
 }
 
-.me{
+.delaney{
     width: 60%;
     height: auto;
 }
@@ -115,6 +115,7 @@
 .hover-underline-animation {
     display: inline-block;
     position: relative;
+    font-family: 'Times New Roman'; 
     /*color: #0087ca;*/
   }
   
@@ -127,6 +128,7 @@
     bottom: 0;
     left: 0;
     background-color: #eae6e6;
+    font-family: 'Times New Roman'; 
     /*transform-origin: bottom right;*/
     transition: transform 0.35s ease-out;
 }
@@ -145,7 +147,7 @@
 /*---text---*/
 
 .procedure-head{
-    font-family: "Snell Roundhand",cursive; 
+    font-family: 'Times New Roman'; 
     color: rgb(255, 255, 255);
 }
 
@@ -164,7 +166,7 @@
 
 .about-team{
     font-size: 100px;
-    font-family: "Snell Roundhand",cursive;
+    font-family: 'Times New Roman'; 
     color: rgb(255, 255, 255);
 }
 
@@ -184,7 +186,7 @@
 
 .name{
     font-size: 40px;
-    font-family: "Snell Roundhand",cursive;
+    font-family: 'Times New Roman'; 
     color: rgb(255, 255, 255); 
 }
 
@@ -198,3 +200,14 @@
     color: #fff;
     border-color: #d1c4e9;
   }
+
+  #chart-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px; /* adjust as needed */
+}
+
+#barChart {
+    width: 100% !important;
+    height: 100% !important;
+}
