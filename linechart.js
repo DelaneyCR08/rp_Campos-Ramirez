@@ -1,6 +1,6 @@
 
 async function getData() {
-    const response = await fetch('../data/research.csv'); // path to your CSV file
+    const response = await fetch('data/research.csv'); // path to your CSV file
 
     const data = await response.text(); // convert CSV to plain text
     console.log(data); // optional: see the raw data in console
