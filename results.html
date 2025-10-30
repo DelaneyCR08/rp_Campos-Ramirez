@@ -23,16 +23,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
     crossorigin="anonymous"></script>
+
 </head>
 <body class="body">
     <div class="container-lg">
-
-        <section class="chartjs-sample">
-            <div class="container d-flex overflow-hidden bg-light rounded-4" id="chart-wrapper">
-               <canvas id="barChart"></canvas>
-            </div>
-        </section>
-
 
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
@@ -71,7 +65,14 @@
             </div>
         </nav>
 
-
+        <section class="chartjs-research">
+            <br>
+            <br>
+            <br>
+            <div class="container d-flex overflow-hidden bg-light rounded-4" id="chart-wrapper">
+               <canvas id="barChart"></canvas>
+            </div>
+        </section>
         
 
         <!--Footer (require a Bootstrap icon)-->
@@ -85,5 +86,9 @@
             </div>
         </footer>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="linechart.js"></script>
 </body>
 </html>

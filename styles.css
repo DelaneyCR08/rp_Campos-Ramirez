@@ -59,7 +59,10 @@
     background-color: #795F80; /*#0096c7*/
 }
 
-
+.chartjs-research{
+    background-color: #795F80;
+    padding: 1px;
+}
 
 /*---------------------Image CSS------------------------*/
 #image-logo{

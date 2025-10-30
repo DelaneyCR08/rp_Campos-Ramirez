@@ -1,13 +1,13 @@
 
 async function getData() {
-    const response = await fetch('../../data/algorithm-performance.csv'); // path to your CSV file
+    const response = await fetch('../data/research.csv'); // path to your CSV file
+
     const data = await response.text(); // convert CSV to plain text
     console.log(data); // optional: see the raw data in console
 
     const labels = []; // x-axis: algorithm names
     const accuracy = [];
     const execTime = [];
-    const memory = [];
     const falsePos = [];
     const falseNeg = [];
 
@@ -18,20 +18,18 @@ async function getData() {
         const algo = columns[0];
         const acc = parseFloat(columns[1]);
         const time = parseFloat(columns[2]);
-        const mem = parseFloat(columns[3]);
-        const fp = parseFloat(columns[4]);
-        const fn = parseFloat(columns[5]);
+        const fp = parseFloat(columns[3]);
+        const fn = parseFloat(columns[4]);
 
         labels.push(algo);
         accuracy.push(acc);
         execTime.push(time);
-        memory.push(mem);
         falsePos.push(fp);
         falseNeg.push(fn);
     });
 
     // return all arrays in one object
-    return { labels, accuracy, execTime, memory, falsePos, falseNeg };
+    return { labels, accuracy, execTime, falsePos, falseNeg };
 }
 
 async function createChart() {
@@ -55,13 +53,6 @@ async function createChart() {
                     data: data.execTime,
                     backgroundColor: 'rgba(255, 99, 132, 0.6)',
                     borderColor: 'rgba(255, 99, 132, 1)',
-                    borderWidth: 1
-                },
-                {
-                    label: 'Memory Usage (MB)',
-                    data: data.memory,
-                    backgroundColor: 'rgba(255, 206, 86, 0.6)',
-                    borderColor: 'rgba(255, 206, 86, 1)',
                     borderWidth: 1
                 },
                 {
